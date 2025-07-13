@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SOURCERITE FARMS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('logo-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      color: #1f2937;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+    header {
+      position: relative;
+      background: rgba(15, 23, 42, 0.85);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      z-index: 1;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
+    }
+    h1 {
+      margin: 10px 0 0;
+      font-size: 2em;
+    }
+    .specializations, .gallery, .socials, footer {
+      position: relative;
+      z-index: 1;
+    }
+    .specializations {
+      padding: 30px 20px;
+      background-color: rgba(226, 232, 240, 0.85);
+    }
+    .specializations h2 {
+      color: #0f172a;
+      font-size: 1.5em;
+    }
+    .specializations ul {
+      list-style: none;
+      padding: 0;
+    }
+    .specializations li {
+      padding: 10px 0;
+      font-size: 1.1em;
+    }
+    .specializations li::before {
+      content: '➡️';
+      margin-right: 10px;
+      color: #1d4ed8;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+    .socials {
+      text-align: center;
+      padding: 30px 10px;
+    }
+    .socials a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #1d4ed8;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .socials a:hover {
+      background-color: #2563eb;
+    }
+    footer {
+      background-color: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin: 0 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="SOURCERITE FARMS Logo" />
+    <h1>SOURCERITE FARMS</h1>
+  </header>
+
+  <section class="specializations">
+    <h2>We specialize in:</h2>
+    <ul>
+      <li>Tilapia and catfish production</li>
+      <li>Bulk smoking/processing of fish</li>
+      <li>Farm set-up</li>
+      <li>Sales of seeds and seedlings of crops</li>
+      <li>Supply of agricultural produce</li>
+      <li>And general agribusiness solutions</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <img src="tilapia.jpg" alt="Tilapia Production" />
+    <img src="smoked-fish.jpg" alt="Smoked Fish Processing" />
+    <img src="farm-setup.jpg" alt="Farm Setup" />
+    <img src="seedlings.jpg" alt="Seeds and Seedlings" />
+    <img src="produce.jpg" alt="Agricultural Produce" />
+    <img src="agribusiness.jpg" alt="Agribusiness Solutions" />
+  </section>
+
+  <div class="socials">
+    <a href="https://wa.me/2349061593716" target="_blank">WhatsApp</a>
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Instagram</a>
+  </div>
+
+  <footer>
+    &copy; 2025 SOURCERITE FARMS. All rights reserved.
+  </footer>
+
+</body>
+</html>
